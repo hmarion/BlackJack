@@ -1,0 +1,314 @@
+[{
+    "numeroCarta": "A",
+    "paloCarta": "Corazon",
+    "valorCarta": 1,
+    "imagenCarta": "./multimedia/mazo/Acorazon.jpg"
+},
+{
+    "numeroCarta": 2,
+    "paloCarta": "Corazon",
+    "valorCarta": 2,
+    "imagenCarta": "./multimedia/mazo/2corazon.jpg"
+},
+{
+    "numeroCarta": 3,
+    "paloCarta": "Corazon",
+    "valorCarta": 3,
+    "imagenCarta": "./multimedia/mazo/3corazon.jpg"
+},
+{
+    "numeroCarta": 4,
+    "paloCarta": "Corazon",
+    "valorCarta": 4,
+    "imagenCarta": "./multimedia/mazo/4corazon.jpg"
+},
+{
+    "numeroCarta": 5,
+    "paloCarta": "Corazon",
+    "valorCarta": 5,
+    "imagenCarta": "./multimedia/mazo/5corazon.jpg"
+},
+{
+    "numeroCarta": 6,
+    "paloCarta": "Corazon",
+    "valorCarta": 6,
+    "imagenCarta": "./multimedia/mazo/6corazon.jpg"
+},
+{
+    "numeroCarta": 7,
+    "paloCarta": "Corazon",
+    "valorCarta": 7,
+    "imagenCarta": "./multimedia/mazo/7corazon.jpg"
+},
+{
+    "numeroCarta": 8,
+    "paloCarta": "Corazon",
+    "valorCarta": 8,
+    "imagenCarta": "./multimedia/mazo/8corazon.jpg"
+},
+{
+    "numeroCarta": 9,
+    "paloCarta": "Corazon",
+    "valorCarta": 9,
+    "imagenCarta": "./multimedia/mazo/9corazon.jpg"
+},
+{
+    "numeroCarta": 10,
+    "paloCarta": "Corazon",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/10corazon.jpg"
+},
+{
+    "numeroCarta": "J",
+    "paloCarta": "Corazon",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/jcorazon.jpg"
+},
+{
+    "numeroCarta": "Q",
+    "paloCarta": "Corazon",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/qcorazon.jpg"
+},
+{
+    "numeroCarta": "k",
+    "paloCarta": "Corazon",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/kcorazon.jpg"
+},
+{
+    "numeroCarta": "A",
+    "paloCarta": "Diamante",
+    "valorCarta": 1,
+    "imagenCarta": "./multimedia/mazo/Adiamante.jpg"
+},
+{
+    "numeroCarta": 2,
+    "paloCarta": "Diamante",
+    "valorCarta": 2,
+    "imagenCarta": "./multimedia/mazo/2diamante.jpg"
+},
+{
+    "numeroCarta": 3,
+    "paloCarta": "Diamante",
+    "valorCarta": 3,
+    "imagenCarta": "./multimedia/mazo/3diamante.jpg"
+},
+{
+    "numeroCarta": 4,
+    "paloCarta": "Diamante",
+    "valorCarta": 4,
+    "imagenCarta": "./multimedia/mazo/4diamante.jpg"
+},
+{
+    "numeroCarta": 5,
+    "paloCarta": "Diamante",
+    "valorCarta": 5,
+    "imagenCarta": "./multimedia/mazo/5diamante.jpg"
+},
+{
+    "numeroCarta": 6,
+    "paloCarta": "Diamante",
+    "valorCarta": 6,
+    "imagenCarta": "./multimedia/mazo/6diamante.jpg"
+},
+{
+    "numeroCarta": 7,
+    "paloCarta": "Diamante",
+    "valorCarta": 7,
+    "imagenCarta": "./multimedia/mazo/7diamante.jpg"
+},
+{
+    "numeroCarta": 8,
+    "paloCarta": "Diamante",
+    "valorCarta": 8,
+    "imagenCarta": "./multimedia/mazo/8diamante.jpg"
+},
+{
+    "numeroCarta": 9,
+    "paloCarta": "Diamante",
+    "valorCarta": 9,
+    "imagenCarta": "./multimedia/mazo/9diamante.jpg"
+},
+{
+    "numeroCarta": 10,
+    "paloCarta": "Diamante",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/10diamante.jpg"
+},
+{
+    "numeroCarta": "J",
+    "paloCarta": "Diamante",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/jdiamante.jpg"
+},
+{
+    "numeroCarta": "Q",
+    "paloCarta": "Diamante",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/qdiamante.jpg"
+},
+{
+    "numeroCarta": "k",
+    "paloCarta": "Diamante",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/kdiamante.jpg"
+},
+{
+    "numeroCarta": "A",
+    "paloCarta": "Trebol",
+    "valorCarta": 1,
+    "imagenCarta": "./multimedia/mazo/Atrebol.jpg"
+},
+{
+    "numeroCarta": 2,
+    "paloCarta": "Trebol",
+    "valorCarta": 2,
+    "imagenCarta": "./multimedia/mazo/2trebol.jpg"
+},
+{
+    "numeroCarta": 3,
+    "paloCarta": "Trebol",
+    "valorCarta": 3,
+    "imagenCarta": "./multimedia/mazo/3trebol.jpg"
+},
+{
+    "numeroCarta": 4,
+    "paloCarta": "Trebol",
+    "valorCarta": 4,
+    "imagenCarta": "./multimedia/mazo/4trebol.jpg"
+},
+{
+    "numeroCarta": 5,
+    "paloCarta": "Trebol",
+    "valorCarta": 5,
+    "imagenCarta": "./multimedia/mazo/5trebol.jpg"
+},
+{
+    "numeroCarta": 6,
+    "paloCarta": "Trebol",
+    "valorCarta": 6,
+    "imagenCarta": "./multimedia/mazo/6trebol.jpg"
+},
+{
+    "numeroCarta": 7,
+    "paloCarta": "Trebol",
+    "valorCarta": 7,
+    "imagenCarta": "./multimedia/mazo/7trebol.jpg"
+},
+{
+    "numeroCarta": 8,
+    "paloCarta": "Trebol",
+    "valorCarta": 8,
+    "imagenCarta": "./multimedia/mazo/8trebol.jpg"
+},
+{
+    "numeroCarta": 9,
+    "paloCarta": "Trebol",
+    "valorCarta": 9,
+    "imagenCarta": "./multimedia/mazo/9trebol.jpg"
+},
+{
+    "numeroCarta": 10,
+    "paloCarta": "Trebol",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/10trebol.jpg"
+},
+{
+    "numeroCarta": "J",
+    "paloCarta": "Trebol",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/jtrebol.jpg"
+},
+{
+    "numeroCarta": "Q",
+    "paloCarta": "Trebol",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/qtrebol.jpg"
+},
+{
+    "numeroCarta": "k",
+    "paloCarta": "Trebol",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/ktrebol.jpg"
+},
+{
+    "numeroCarta": "A",
+    "paloCarta": "Pica",
+    "valorCarta": 1,
+    "imagenCarta": "./multimedia/mazo/Apica.jpg"
+},
+{
+    "numeroCarta": 2,
+    "paloCarta": "Pica",
+    "valorCarta": 2,
+    "imagenCarta": "./multimedia/mazo/2pica.jpg"
+},
+{
+    "numeroCarta": 3,
+    "paloCarta": "Pica",
+    "valorCarta": 3,
+    "imagenCarta": "./multimedia/mazo/3pica.jpg"
+},
+{
+    "numeroCarta": 4,
+    "paloCarta": "Pica",
+    "valorCarta": 4,
+    "imagenCarta": "./multimedia/mazo/4pica.jpg"
+},
+{
+    "numeroCarta": 5,
+    "paloCarta": "Pica",
+    "valorCarta": 5,
+    "imagenCarta": "./multimedia/mazo/5pica.jpg"
+},
+{
+    "numeroCarta": 6,
+    "paloCarta": "Pica",
+    "valorCarta": 6,
+    "imagenCarta": "./multimedia/mazo/6pica.jpg"
+},
+{
+    "numeroCarta": 7,
+    "paloCarta": "Pica",
+    "valorCarta": 7,
+    "imagenCarta": "./multimedia/mazo/7pica.jpg"
+},
+{
+    "numeroCarta": 8,
+    "paloCarta": "Pica",
+    "valorCarta": 8,
+    "imagenCarta": "./multimedia/mazo/8pica.jpg"
+},
+{
+    "numeroCarta": 9,
+    "paloCarta": "Pica",
+    "valorCarta": 9,
+    "imagenCarta": "./multimedia/mazo/9pica.jpg"
+},
+{
+    "numeroCarta": 10,
+    "paloCarta": "Pica",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/10pica.jpg"
+},
+{
+    "numeroCarta": "J",
+    "paloCarta": "Pica",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/jpica.jpg"
+},
+{
+    "numeroCarta": "Q",
+    "paloCarta": "Pica",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/qpica.jpg"
+},
+{
+    "numeroCarta": "k",
+    "paloCarta": "Pica",
+    "valorCarta": 10,
+    "imagenCarta": "./multimedia/mazo/kpica.jpg"
+}
+
+]

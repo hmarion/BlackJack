@@ -1,0 +1,35 @@
+#croupier{
+    display: none;
+}
+
+#datosJugador{
+    display: none;
+}
+
+#jugador{
+    display: none;
+}
+
+#pedirCarta{
+    display: none;
+}
+
+#finMano{
+    display: none;
+}
+
+#menuApuesta{
+    display: none;
+}
+
+#nuevo{
+    display: none;
+}
+
+body{
+    text-align: center;
+}
+
+#ocultarMazo{
+    display: none;
+}
