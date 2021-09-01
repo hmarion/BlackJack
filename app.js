@@ -144,7 +144,7 @@ function apuesta(e) {
         setTimeout(function(){repartirCarta(usuario1)}, 4000);
         setTimeout(function(){repartirCarta(croupier)}, 6000);
 
-        $("html, body").animate({ scrollTop: $('#jugador').offset().top }, 10000);
+        $("html, body").animate({ scrollTop: $('#jugador').offset().top }, 3000);
     }
 }
 
