@@ -2,40 +2,42 @@
 //Array para armar el mazo de cartas
 let mazo;
 
+//Variables para cargar los objetos de la clase usuario
 let usuario1;
-let jugador1 = 0;
 let croupier = new Usuario("croupier", 0);
+
+//Variables para manejar el HTML
 let jugadorHTML;
-let saldoHTML = document.getElementById("saldoJugador");
-let montoApuesta;
 let apuestaHTML;
 let cartaHTML;
-let cantidadCartas = 0;
+const saldoHTML = document.getElementById("saldoJugador");
 
-//Variable utilizada para marcar cuanto apuesta el jugador
+//Variable para la logica del BlackJack
+let montoApuesta;
+let cantidadCartas;
 let dineroApostado;
 
 //Variables Utilizadas para los botones
-let btnFinalizarSesion = document.getElementById("cerrarSesion")
-let btnPedirCarta = document.getElementById("pedirCarta")
-let btnPlantarse = document.getElementById("finMano")
-let btnApuesta = document.getElementById("apuesta")
-let btnMazo = document.getElementById("mazo");
-let btnLogin = document.getElementById("usuario");
-let btnNuevo = document.getElementById("nuevo");
-let btnOcultarMazo = document.getElementById("ocultarMazo");
+const btnFinalizarSesion = document.getElementById("cerrarSesion");
+const btnPedirCarta = document.getElementById("pedirCarta");
+const btnPlantarse = document.getElementById("finMano");
+const btnApuesta = document.getElementById("apuesta");
+const btnMazo = document.getElementById("mazo");
+const btnLogin = document.getElementById("usuario");
+const btnNuevo = document.getElementById("nuevo");
+const btnOcultarMazo = document.getElementById("ocultarMazo");
 
 //----------Funciones----------------------------------
 //Funcion para repartir carta y asignarla al jugador correspondiente
 function repartirCarta(jugador) {
-    do{ //Cargo una carta al Jugador
+    do{ //Reparto una carta y la muestro en pantalla
         let numeroAzar;
         let cartaJuego;
         do{
             numeroAzar = Math.trunc(Math.random() * 51);
             cartaJuego = mazo[numeroAzar];
         }while(cartaJuego == 0);
-        mazo[numeroAzar] = 0;
+        mazo[numeroAzar] = 0; //Asigno 0 para no repetir las cartas durante la mano
         if(cartaJuego.valorCarta == 1){
             jugador.cantidadCartasA += 1;
             sumarCartaA(jugador);
@@ -44,14 +46,14 @@ function repartirCarta(jugador) {
             jugador.puntajeMinimo += cartaJuego.valorCarta;
         }
         cargarPuntaje(jugador);
-        console.log("Puntaje " + jugador.nombre + ": " + jugador.puntaje);
 
-        //Cargar las cartas en pantalla
         if(jugador.nombre == "croupier"){
             mostrarCartas(jugador.nombre, cartaJuego);
         }else{
             mostrarCartas("jugador", cartaJuego);
         }
+
+        mostrarPuntaje(jugador);
         cantidadCartas += 1;
     }while(jugador.puntaje == 0);
 }
@@ -61,14 +63,18 @@ function finSesion() {
     localStorage.clear();
 }
 
-//Funcion para finalizar la partida y verificar el ganador
+//Funcion para finalizar la partida
+//Repartir cartas al croupier hasta que tenga mas de 16 puntos y se verifique el ganador
 function plantarse() {
     let ganador;
+
     while(croupier.puntaje<17){
         repartirCarta(croupier);
     }
+
     ganador = verificarGanador(usuario1, croupier, montoApuesta);
     ganadorHTML(ganador);
+
     usuario1.nuevaPartida();
     croupier.nuevaPartida();
     localStorage.setItem("Jugador", JSON.stringify(usuario1));
@@ -93,6 +99,8 @@ function nuevo(){
         document.body.removeChild(apuestaHTML);
         apuestaHTML = null;
     }
+    mostrarPuntaje(usuario1.puntaje);
+    mostrarPuntaje(croupier);
     saldoHTML.textContent = "Saldo: " + usuario1.dinero;
     mostrarHTML("menuApuesta");
     mostrarHTML("mazo");
@@ -114,9 +122,12 @@ function pedirCarta() {
 function apuesta(e) {
     e.preventDefault();
 
+    cantidadCartas = 0;
     montoApuesta = document.getElementsByTagName("input")[1].value;
-    if((montoApuesta > usuario1.dinero) || (montoApuesta == parseInt(0))){
+    if(montoApuesta > usuario1.dinero){
         alert("No posee saldo para realizar esa apuesta");
+    }else if(montoApuesta == parseInt(0)){
+        alert("La apuesta no puede ser $0");
     }else{
         ocultarHTML("menuApuesta");
         ocultarHTML("mazo");
@@ -125,10 +136,7 @@ function apuesta(e) {
         mostrarHTML("croupier");
         mostrarHTML("jugador");
         usuario1.apuestaJugador(montoApuesta)
-        saldoHTML.textContent = "Saldo: " + usuario1.dinero;
-        apuestaHTML = document.createElement("h4");
-        apuestaHTML.innerHTML = "Dinero Apostado: " + montoApuesta;
-        document.body.appendChild(apuestaHTML);
+        saldoHTML.textContent = "Saldo: $" + usuario1.dinero + " -  Dinero Apostado: $" + montoApuesta;
 
         //Se reparten las 2 cartas iniciales para cada uno
         repartirCarta(usuario1);
@@ -136,6 +144,7 @@ function apuesta(e) {
         setTimeout(function(){repartirCarta(usuario1)}, 4000);
         setTimeout(function(){repartirCarta(croupier)}, 6000);
 
+        $("html, body").animate({ scrollTop: $('#jugador').offset().top }, 10000);
     }
 }
 
@@ -154,15 +163,17 @@ function login(e) {
     usuario1 = new Usuario(nombre, 1000);
     localStorage.setItem("Jugador", JSON.stringify(usuario1));
     ocultarHTML("login");
-    mostrarHTML("datosJugador")
+    mostrarHTML("datosJugador");
     mostrarDatos(usuario1);
-    mostrarHTML("menuApuesta")
+    mostrarHTML("menuApuesta");
+    mostrarHTML("cerrarSesion");
 }
 
 //Funcion para mostrar un codigo HTML oculto
 function mostrarHTML(id){
     let html = document.getElementById(id);
     html.style.display = "block";
+    html.style.textAlign = "center";
 }
 
 //Funcion para ocultar un codigo HTML
@@ -190,7 +201,7 @@ function mostrarMazo() {
 
 //Funcion para borrar el Mazo mostrado
 function ocultarMazo(){
-    let borrarTitulo = document.getElementsByTagName("h4")[2];
+    let borrarTitulo = document.getElementsByTagName("h4")[4];
     document.body.removeChild(borrarTitulo);
     for(i=0; i<52; i++){
         let imagenes = document.getElementById("cartas");
@@ -218,16 +229,30 @@ function ganadorHTML(jugador){
                  .fadeToggle(2000);
 }
 
+//Funcion para limpiar quien gano en el DOM
 function borrarGanador(){
     $('#ganador').empty();
 }
 
 //Animacion para mostrar la carta mostrada por el dorso y cambiarla a la imagen de la carta
 function animacion1(imagenCarta){
-    let carta = '#cartas'+cantidadCartas
+    let carta = '#cartas'+cantidadCartas;
     $(carta).fadeIn(1000, function(){
         $(carta).attr("src", imagenCarta);
     });         
+}
+
+//Funcion para mostrar el puntaje de cada jugador en el DOM
+function mostrarPuntaje(usuario){
+    let id;
+    if (usuario.nombre === "croupier"){
+        id = "puntajeCroupier";
+    }else{
+        id = "puntajeJugador";
+    }
+
+    let puntajeHTML = document.getElementById(id);
+    puntajeHTML.textContent = usuario.puntaje;
 }
 
 
@@ -249,6 +274,7 @@ if(localStorage.key("Jugador") != null){
     usuario2 = JSON.parse(localStorage.getItem("Jugador"));
     usuario1 = new Usuario(usuario2.nombre, usuario2.dinero);
     mostrarDatos(usuario1);
-    mostrarHTML("datosJugador")
-    mostrarHTML("menuApuesta")
+    mostrarHTML("datosJugador");
+    mostrarHTML("menuApuesta");
+    mostrarHTML("cerrarSesion")
 }

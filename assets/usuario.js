@@ -32,6 +32,9 @@ class Usuario{
 
 //----------Funciones----------------------------------
 //Funcion para sumar A
+//La carta A puede valer 1 u 11.
+//Si sale 2A una vale 1 y la otra vale 11
+//Si sale 3A perdes la mano
 function sumarCartaA(jugador){
     if(jugador.cantidadCartasA==1){
         jugador.puntajeMaximo += 11;
@@ -44,7 +47,7 @@ function sumarCartaA(jugador){
     }
 };
 
-//Funcion para validar puntaje
+//Funcion para validar puntaje Maximo y Minimo, y asignar el que corresponda
 function cargarPuntaje(jugador){
     if(jugador.puntajeMaximo<=21){
         jugador.puntaje = jugador.puntajeMaximo;

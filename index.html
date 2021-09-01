@@ -15,12 +15,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <li class="nav-item">
-                <a class="nav-link" href="./views/poker.html">Poker</a>
-            </li>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="botonLogin"></div>
                 <form class="form-inline my-2 my-lg-0">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="cerrarSesion">Cerrar Sesion</button>
                 </form>
@@ -28,14 +24,8 @@
         </nav> <!--Fin Menu de Navegacion-->
     </header> <!--Fin Encabezado de la pagina web-->
     
-    <h1>Clase 14 - 3er Entrega de Proyecto Final </h1>
-    <h2></h2>
-
-    <main>
-        <section>
-            <img src="./multimedia/mesaBlackJack.jpg" alt="mesaBlackJack">
-        </section>
-    </main>
+    <h1>BlackJack</h1>
+    <Hr></Hr>
 
     <section id="login">
         <form>
@@ -45,13 +35,16 @@
     </section>
 
     <section id="datosJugador">
-        <h3>Datos Jugador</h3>
+        <h3>Jugador</h3>
         <h4 id="nombreJugador"></h4>
         <h4 id="saldoJugador"></h4>
+    </section>
+
+    <section id="botones">
         <button id="pedirCarta">Pedir Carta</button>
         <button id="finMano">Plantarse</button>
-        <button id="mazo">Mazo</button>
-        <button id="ocultarMazo">Borrar Mazo</button>
+        <button id="mazo">Mostrar Mazo</button>
+        <button id="ocultarMazo">Ocultar Mazo</button>
         <button id="nuevo">Nuevo Juego</button>
     </section>
 
@@ -64,6 +57,7 @@
 
     <section id="croupier">
         <h3>Cartas Croupier</h3>
+        <h4 id="puntajeCroupier"></h4>
         <img src="./multimedia/mazo/dorso.jpg" alt="dorso de carta">
     </section>
     
@@ -71,6 +65,7 @@
 
     <section id="jugador">
         <h3 id="nombreJugador">Cartas Jugador</h3>
+        <h4 id="puntajeJugador"></h4>
     </section>
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

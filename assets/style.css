@@ -1,17 +1,48 @@
+body{
+    text-align: center;
+    background-color: green;
+    background-image: linear-gradient();
+}
+
+button{
+    margin: 10px;
+}
+
+img{
+    border: solid;
+    color: black;
+    margin: 1px;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 #croupier{
     display: none;
+    color: white;
 }
 
 #datosJugador{
     display: none;
+    color: yellowgreen;
+    border: dashed;
+}
+
+#botones{
+    display: flex;
+    justify-content: center;
 }
 
 #jugador{
     display: none;
+    color: white;
 }
 
 #pedirCarta{
     display: none;
+    text-align: center;
 }
 
 #finMano{
@@ -26,10 +57,10 @@
     display: none;
 }
 
-body{
-    text-align: center;
+#ocultarMazo{
+    display: none;
 }
 
-#ocultarMazo{
+#cerrarSesion{
     display: none;
 }
