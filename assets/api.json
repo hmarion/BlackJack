@@ -2,7 +2,7 @@
     "numeroCarta": "A",
     "paloCarta": "Corazon",
     "valorCarta": 1,
-    "imagenCarta": "./multimedia/mazo/Acorazon.jpg"
+    "imagenCarta": "./multimedia/mazo/acorazon.jpg"
 },
 {
     "numeroCarta": 2,
@@ -80,7 +80,7 @@
     "numeroCarta": "A",
     "paloCarta": "Diamante",
     "valorCarta": 1,
-    "imagenCarta": "./multimedia/mazo/Adiamante.jpg"
+    "imagenCarta": "./multimedia/mazo/adiamante.jpg"
 },
 {
     "numeroCarta": 2,
@@ -158,7 +158,7 @@
     "numeroCarta": "A",
     "paloCarta": "Trebol",
     "valorCarta": 1,
-    "imagenCarta": "./multimedia/mazo/Atrebol.jpg"
+    "imagenCarta": "./multimedia/mazo/atrebol.jpg"
 },
 {
     "numeroCarta": 2,
@@ -236,7 +236,7 @@
     "numeroCarta": "A",
     "paloCarta": "Pica",
     "valorCarta": 1,
-    "imagenCarta": "./multimedia/mazo/Apica.jpg"
+    "imagenCarta": "./multimedia/mazo/apica.jpg"
 },
 {
     "numeroCarta": 2,
